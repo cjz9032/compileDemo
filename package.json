@@ -6,11 +6,13 @@
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --progress --colors --open --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "start": "cross-env NODE_ENV=production node app"
   },
   "dependencies": {
-    "vue": "^2.3.3",
-    "underscore": "^1.8.3"
+    "express": "^4.15.3",
+    "underscore": "^1.8.3",
+    "vue": "^2.3.3"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",
